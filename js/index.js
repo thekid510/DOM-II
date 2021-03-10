@@ -12,7 +12,7 @@ links.forEach(link => {link.addEventListener('mouseover',
 })
 
 // type 3
-const p = document.querySelectorAll('p');
+const p = document.querySelector('p');
 Array.from(p).forEach(Element => {
     Element.addEventListener('dblclick', (event => {
         event.target.style.backgroundColor = 'pink';
@@ -21,10 +21,11 @@ Array.from(p).forEach(Element => {
 
 //type 4 
 
+
 const h4 = document.querySelectorAll('h4');
 Array.from(h4).forEach(Element => {
-    Element.addEventListener('dblclick', (event => {
-        event.target.style.backgroundColor = 'pink';
+    Element.addEventListener('keydown', (event => {
+        event.target.style.backgroundColor = 'yellow';
     }));
 })
 
@@ -32,7 +33,18 @@ Array.from(h4).forEach(Element => {
 
 const funBus = document.querySelectorAll('h1');
 Array.from(funBus).forEach(Element => {
-    Element.addEventListener('dblclick', (event => {
-        event.target.style.border-box = '1px solid black';
+    Element.addEventListener('wheel', (event => {
+        event.target.style.backgroundColor = 'pink';
     }));
 })
+
+// type 6
+
+
+
+const h2 = document.querySelector('h2')
+h2.addEventListener('mouseenter', (event) => {
+    event.target.style.fontSize = '3rem';
+        
+    
+});
